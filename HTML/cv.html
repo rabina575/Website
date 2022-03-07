@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CV</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coursework CV">
+    <meta name="author" content="Rabina Shrestha">
+    <!-- Importing Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
+    <!-- Importing Font Awesome Icons for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <!-- Adding Internal Styles -->
+    <style>
+        /* Style to make the image circle */
+        img {
+            border-radius: 50%;
+        }
+
+        /* Color for ❀ */
+        .fig1 {
+            color: rgba(228, 133, 205, 1);
+        }
+
+        /* Second color for ❀ */
+        .fig2 {
+            color: rgba(74, 163, 223, 1);
+        }
+
+        /* Font Internal CSS */
+        .fhcv {
+            font-family: 'Tenali Ramakrishna', sans-serif;
+        }
+    </style>
+</head>
+
+<!-- Body starts here -->
+<body class="bg">
+    <!-- Go Up Element -->
+    <div class="go-up" id="goup" onclick="goup()"> <i class="fa fa-angle-up" aria-hidden="true"></i> </div>
+    <!-- Start of navigation bar -->
+    <!-- Hamburger menu for mobile devices -->
+    <div class="hamburger" id="hamburger" onclick="toggle()"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="cv.html">CV</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <!-- End of navigation bar -->
+
+    <!-- Start of CV -->
+    <div class="cv-wrapper">
+        <!-- CV A4 effect -->
+        <div class="cv-container">
+            <!-- CV Top Portion -->
+            <!-- Use of inline CSS -->
+            <div>
+                <h1 style="font-family: 'Tenali Ramakrishna', sans-serif; text-align: center; font-size: 30px;"> Rabina
+                    Shrestha </h1>
+            </div> <br>
+            <!-- CV image -->
+            <div class="img"> <img src="../Images/dp.jpg" height="70" width="70"> </div> <br>
+            <!-- Div for personal details -->
+            <div>
+                <div class="cv-title">
+                    <h4 class="fhcv" style="text-align: center; padding-top: 5px; padding-bottom: 5px;"> Student
+                        of Islington. </h4>
+                </div>
+                <div class="cv-pdetail" style="border-top: 0px;">
+                    <!-- Directs straight to email when clicked -->
+                    <div class="pemail"> <span> Email </span> <a href="mailto:np01cp4s210039@islingtoncollege.edu.np"
+                            style="color: black; word-break: break-all; "> <span style="font-size: 14px;">
+                                np01cp4s210039@islingtoncollege.edu.np </span> </a> </div>
+                    <!-- Call is made when clicked -->
+                    <div class="pphone"> <span> Phone No. </span> <a href="tel:+9779862341267" style="color: black;">
+                            <span style="font-size: 14px;"> 9862341267 </span> </a> </div>
+                    <div class="paddr"> <span> Address </span> <span style="font-size: 14px;"> Kuleshwor, Kathmandu
+                        </span> </div>
+                </div>
+            </div> <br>
+            <!-- End of CV Top Portion -->
+
+            <!-- CV Second Portion -->
+            <div class="cv">
+                <!-- CV Left -->
+                <div class="cv-left">
+                    <!-- Div for qualifications -->
+                    <div class="cv-block">
+                        <h2 class="fhcv"> Qualifications </h2>
+                        <!-- current -->
+                        <h3 class="fhcv"> Bachelor of Science (Hons) Computing</h3>
+                        <p> Islington College <br> Kamal Pokhari, Kathmandu, Nepal. <br> Board: IEL<br> Year:
+                            2021-Present </p> <br>
+                        <!-- High school -->
+                        <h3 class="fhcv"> High School Diploma</h3>
+                        <p> Modern Indian School <br> Chobhar, Kathmandu, Nepal. <br> Board: CBSE<br> Year: 2018-2020
+                            <br> % = 75 </p> <br>
+                        <!-- Secondary school -->
+                        <h3 class="fhcv"> Secondary School Diploma</h3>
+                        <p> Modern Indian School<br> Chobhar, Kathmandu, Nepal. <br> Board: CBSE<br> Year: 2016-2018
+                            <br> % = 69 <br> </p>
+                    </div> <br>
+                    <!-- End of qualifications -->
+                    <!-- Div for personal information -->
+                    <div>
+                        <h2 class="fhcv"> Personal Information</h2> <br>
+                        <!-- Table starts here -->
+                        <table style="border: 0px">
+                            <tbody>
+                                <!-- row start -->
+                                <tr>
+                                    <td> Surname </td>
+                                    <td> : Shrestha</td>
+                                </tr>
+                                <!-- row end -->
+                                <!-- row start -->
+                                <tr>
+                                    <td> Name </td>
+                                    <td> : Rabina</td>
+                                </tr>
+                                <!-- row end -->
+                                <!-- row start -->
+                                <tr>
+                                    <td> Date of Birth </td>
+                                    <td> : 27 November, 2002</td>
+                                </tr>
+                                <!-- row end -->
+                                <!-- row start -->
+                                <tr>
+                                    <td> Gender </td>
+                                    <td> : Female</td>
+                                </tr>
+                                <!-- row end -->
+                                <!-- row start -->
+                                <tr>
+                                    <td> Nationality </td>
+                                    <td> : Nepali</td>
+                                </tr>
+                                <!-- row end -->
+                            </tbody>
+                        </table>
+                        <!-- Table Ends Here -->
+                    </div>
+                    <!-- End of Personal Information -->
+                </div>
+                <!-- End of CV Left -->
+
+                <!-- CV Right -->
+                <div class="cv-right">
+                    <!-- Div for Programming Languages -->
+                    <div class="cv-block">
+                        <h2 class="fhcv"> Programming Languages</h2>
+                        <p> <span class="fig1">❀</span> Python <br> <span class="fig2">❀</span> Java <br> <span
+                                class="fig1">❀</span> Javascript <br> <span class="fig2">❀</span> MySQl </p>
+                    </div>
+                    <!-- End of Programming Languages -->
+                    <!-- Div for Aptitude -->
+                    <div class="cv-block">
+                        <h2 class="fhcv"> Aptitude </h2>
+                        <p> <span class="fig1">❀</span> Computer Skills <br> <span class="fig2">❀</span> Management
+                            Skills<br> <span class="fig1">❀</span> Active Listening <br> <span class="fig2">❀</span>
+                            Communication <br> <span class="fig1">❀</span> Leadership Skills </p>
+                    </div>
+                    <!-- End of Aptitude -->
+                    <!-- Div for Languages -->
+                    <div class="cv-block">
+                        <h2 class="fhcv"> Languages</h2>
+                        <p> <span class="fig1">❀</span> English <br> <span class="fig2">❀</span> Nepali <br> <span
+                                class="fig1">❀</span> Hindi </p>
+                    </div> <br>
+                    <!-- End of Languages -->
+                    <!-- Div for Experiences -->
+                    <div>
+                        <h2 class="fhcv"> Experiences</h2> <br>
+                        <p> High School:<br> <span class="fig1">❀</span> Made working Student DBMS using Python <br>
+                            <span class="fig2">❀</span> Sewa Project <br> College:<br> <span class="fig1">❀</span>
+                            Coursework related to DBMS <br> <span class="fig2">❀</span> Project on Object-Oriented
+                            Language Java </p>
+                    </div>
+                    <!-- End of Experiences -->
+                </div>
+                <!-- End of CV Right -->
+            </div>
+            <!-- End of CV Second Portion -->
+        </div>
+        <!-- End of wrapper effect -->
+    </div>
+    <!-- CV Ends Here -->
+
+    <!-- Including Global Script -->
+    <script src="../Js/contact.js"></script>
+
+</body>
+<!-- Body Ends Here -->
+
+</html>

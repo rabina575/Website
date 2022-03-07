@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coursework Contact">
+    <meta name="author" content="Rabina Shrestha">
+    <!-- Importing Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
+    <!-- Importing Font Awesome Icons for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+
+<!-- Body starts here -->
+<body>
+    <div class="bg" style="min-height: 100vh;">
+        <!-- Go Up Element -->
+        <div class="go-up" id="goup" onclick="goup()"> <i class="fa fa-angle-up" aria-hidden="true"></i></div>
+        <!-- Start of navigation bar -->
+        <!-- Hamburger menu for mobile devices -->
+        <div class="hamburger" id="hamburger" onclick="toggle()"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li class="active"><a href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+
+        <!-- Start of Contact -->
+        <div class="contact">
+            <!-- Adding some borders -->
+            <div class="ct">
+                <!-- Contact left side starts here -->
+                <div class="ct-left">
+                    <h3 class="contact-title" style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 25px;">
+                        Let's get in touch</h3>
+                    <p> I am open for any suggestion or just to have a chat. </p> <br>
+                    <!-- Personal Details Start  -->
+                    <div>
+                        <!-- hyperlinks are used from here-->
+                        <!-- Address -->
+                        <div class="personal-detail">
+                            <div> <span class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i> </span> </div>
+                            <div> <span class="contact-label"
+                                    style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> Address:
+                                </span> <br> <span> <a href="https://goo.gl/maps/sUVXDHFHAmRvuXJi8" target="_blank"
+                                        class="link">
+                                        Kuleshwor, Kathmandu, Nepal. </a></span> </div>
+                        </div>
+                        <!-- Number -->
+                        <div class="personal-detail">
+                            <div> <span class="icon"> <i class="fa fa-phone" aria-hidden="true"></i> </span> </div>
+                            <div> <span class="contact-label"
+                                    style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> Phone No.:
+                                </span> <br> <a href="tel:+9779862341267" class="link"> 9862341267 </a> </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="personal-detail">
+                            <div> <span class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </span> </div>
+                            <div> <span class="contact-label"
+                                    style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> Email:
+                                </span> <br> <span> <a href="mailto:np01cp4s210039@islingtoncollege.edu.np" class="link"
+                                        style="word-break: break-all;"> np01cp4s210039@islingtoncollege.edu.np</a>
+                                </span> </div>
+                        </div>
+                        <!-- Facebook -->
+                        <div class="personal-detail">
+                            <div> <span class="icon"> <i class="fa fa-facebook" aria-hidden="true"></i> </span> </div>
+                            <div> <span class="contact-label"
+                                    style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> Facebook:
+                                </span> <br> <span> <a href="https://www.facebook.com/rabina.shrestha.313/"
+                                        target="_blank" class="link"> Rabina Shrestha</a> </span> </div>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="personal-detail">
+                            <div> <span class="icon"> <i class="fa fa-instagram" aria-hidden="true"></i> </span> </div>
+                            <div> <span class="contact-label"
+                                    style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> Instagram:
+                                </span> <br> <span> <a href="https://www.instagram.com/rubina_sh5/" target="_blank"
+                                        class="link"> rubina_sh5</a> </span> </div>
+                        </div>
+                        <!-- hyperlinks end -->
+                    </div>
+                    <!-- End of Personal Details -->
+                </div>
+                <!-- End of CT left -->
+
+                <!-- Contact right side starts here -->
+                <div class="ct-right">
+                    <h3 class="contact-title" style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 25px;">
+                        Get in touch</h3>
+
+                    <!-- Start of Form -->
+                    <form name="msg" onsubmit="return validateform()">
+                        <!-- First name -->
+                        <div class="form-field"> <label
+                                style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> first name:
+                            </label> <input type="text" placeholder="First Name" name="firstname" class="input-field">
+                        </div>
+                        <!-- Last name -->
+                        <div class="form-field"> <label
+                                style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> last name:
+                            </label> <input type="text" placeholder="Last Name" name="lastname" class="input-field">
+                        </div>
+                        <!-- Email id -->
+                        <div class="form-field"> <label
+                                style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> email: </label>
+                            <input type="email" placeholder="Email" name="email" class="input-field">
+                        </div>
+                        <!-- Message box -->
+                        <div class="form-field"> <label
+                                style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 20px;"> message:
+                            </label> <textarea id="message" placeholder="Message" name="message"
+                                style="height: 50px;"></textarea> </div>
+                        <!-- Use of submit button -->
+                        <div class="form-field"> <input type="submit" class="btn"> </div>
+                    </form>
+                    <!-- End of Form -->
+                </div>
+                <!-- End of CT Right -->
+            </div>
+            <!-- End of border -->
+        </div>
+        <!-- End of Contact -->
+
+        <!-- Start of Footer -->
+        <div id="footer">
+            <h2 style="margin-left: auto;"> Rabina Shrestha </h2>
+        </div>
+        <!-- End of Footer -->
+    </div>
+
+    <!-- Including Global Script -->
+    <script src="../Js/contact.js"> </script>
+
+</body>
+<!-- Body Ends Here -->
+
+</html>

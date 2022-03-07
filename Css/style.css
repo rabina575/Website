@@ -1,0 +1,431 @@
+/* Background for web */
+.bg {
+  background: url("../Images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/* for all images to fit in responsive */
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+/* for resetting all css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* bottom margin for paragraphs */
+p {
+  margin-bottom: 10px;
+}
+
+/* start of nav style */
+.nav {
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  display: flex;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.nav ul {
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans';
+}
+
+.nav li {
+  padding: 10px 20px;
+}
+
+.nav li a {
+  color: rgb(223, 79, 187);
+  text-decoration: none;
+  transition: all 1.75s ease;
+}
+
+.nav li:hover {
+  transition: 1.25s;
+  color: rgba(29, 185, 84);
+  box-shadow: 0 0 15px rgb(99, 182, 230);
+  background-color: rgba(32, 80, 68, 0.664);
+}
+
+.nav .active {
+  box-shadow: 0 0 5px rgb(99, 182, 230);
+}
+/* end of nav */
+
+/* Home page */
+/* banner for home page */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+}
+/* home page style */
+.hello h1 {
+  color: rgb(48, 15, 58);
+  text-align: center;
+  font-size: 60px;
+  align-items: center;
+}
+/* style for the footer */
+#footer {
+  line-height: 1;
+  bottom: 0;
+  width: 100%;
+  padding: 2px 30px;
+  background-color: rgb(231, 122, 204);
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 20px;
+  position: fixed;
+  display: flex;
+  align-items: center; 
+}
+.social-icons i {
+  color: black;
+  margin-right: 10px;
+  font-size: 20px;  
+}
+
+/* used for toggle */
+.hide {
+  display: none;
+}
+
+/* styling of toggle button */
+.toggle-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: rgb(181, 185, 236);
+  border: 1px solid rgba(167, 171, 242, 1);
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 20px;
+  border-radius: 7%;
+}
+
+.toggle-btn:hover {
+  box-shadow: 0 0 20px rgba(180, 207, 254, 1);
+  background-color: rgb(137, 205, 226);
+  border: 1px solid whitesmoke;
+}
+
+/* style used to center img */
+.img {
+  text-align: center;
+  overflow: hidden
+}
+
+/* CV */
+/* start of cv styling format */
+.cv-block {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cv-wrapper {
+  width: 840px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  max-width: 100%;
+}
+/* a4 effect */
+.cv-container {
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+}
+/* background image */
+.cv-page {
+  background: url("Images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cv-title {
+  border-top: 1px solid rgba(202, 200, 200, 0.534);
+  border-bottom: 1px solid rgba(202, 200, 200, 0.534);
+  height: auto;
+  text-align: center;
+}
+/* personal details */
+.cv-pdetail {
+  border-top: 1px solid rgba(202, 200, 200, 0.534);
+  border-bottom: 1px solid rgba(202, 200, 200, 0.534);
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.pemail {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex: 1;
+}
+
+.pphone {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.paddr {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  flex: 1;
+}
+/* cv document style */
+.cv {
+  display: flex;
+  flex-direction: row;
+}
+
+.cv-left {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid rgba(202, 200, 200, 0.534);
+}
+
+.cv-right {
+  padding: 20px;
+  flex: 1;
+}
+/* end of cv format */
+
+/* go-up button styling */
+.go-up {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  background: rgba(99, 182, 230, 0.7);
+  align-items: center;
+  color: rgb(223, 79, 187);
+  justify-content: center;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.go-up:hover {
+  transition: 1.25s;
+  color: rgba(29, 185, 84);
+  box-shadow: 0 0 20px rgb(54, 119, 89);
+}
+
+/* Blog page and research pages uses the styles of CV*/
+
+/* style for contact start */
+.contact-title {
+  margin-bottom: 10px;
+}
+/* personal details for contact */
+.personal-detail {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.personal-detail .icon {
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  border: 1px solid #fff;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(76, 164, 221, 1);
+}
+
+.personal-detail .icon i {
+  font-size: 18px;
+  color: rgba(202, 86, 183, 1);
+}
+
+.contact {
+  width: 800px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.contact-label {
+  font-weight: bold
+}
+/* contact box */
+.ct {
+  display: flex;
+  flex-direction: row;
+}
+
+.ct-right {
+  flex: calc(100% - 255px);
+  padding: 20px;
+  background-color: rgba(160, 176, 240, 1);
+  border-left: 5px solid white;
+}
+
+.ct-left {
+  padding: 20px;
+  flex: 1;
+  min-width: 370px;
+  max-width: 100%;
+  background-color: rgba(239, 191, 241, 1);
+}
+/* end of contact style */
+
+/* style for link */
+.link {
+  color: rgb(104, 60, 139);
+}
+
+.link:hover {
+  text-shadow: 0 0 10px rgb(110, 119, 247);
+}
+/* form styling */
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  padding-left: 10px;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-field textarea {
+  height: 100px;
+  width: 100%;
+}
+
+.input-field,
+.form-field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+  padding: 3px 10px;
+}
+/* styling buttons */
+.btn {
+  padding: 7px;
+  background-color: rgba(239, 191, 241, 1);
+  border-radius: 10%;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(76, 164, 221, 1);
+  background-color: rgb(110, 192, 247);
+  border: 1px solid whitesmoke;
+}
+
+/* to create effect of translucent border */
+.rs-wrapper {
+  max-width: 100%;
+  width: 1040px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+}
+
+/* To create navigation bar responsive */
+.hamburger {
+  padding: 10px;
+  color: rgb(223, 79, 187)
+}
+
+.hamburger:hover {
+  transition: 1.25s;
+  color: rgba(29, 185, 84);
+  box-shadow: 0 0 15px rgb(99, 182, 230);
+  background-color: rgba(32, 80, 68, 0.664);
+}
+
+.show {
+  display: flex !important;
+}
+
+/* Media query for devices width more than 767 */
+@media (min-width: 767px) {
+  .hamburger {
+    display: none;
+  }
+
+  .contact {
+    position: absolute;
+    margin-top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Media query for devices width less than 767 */
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .cv-pdetail {
+    flex-direction: column;
+  }
+
+  .pemail,
+  .paddr,
+  .pphone {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .cv {
+    flex-direction: column;
+  }
+
+  .ct {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .ct-right {
+    border-left: 0px !important;
+    flex: 1;
+  }
+
+  .ct-left {
+    flex: 1;
+    min-width: auto;
+  }
+}

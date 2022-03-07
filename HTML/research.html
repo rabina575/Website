@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Research</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coursework Research">
+    <meta name="author" content="Rabina Shrestha">
+    <!-- Importing Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
+    <!-- Importing Font Awesome Icons for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <!-- Adding Internal Styles -->
+    <style>
+        /* gives the effect of paper */
+        .rs-container {
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Research heading */
+        .research {
+            color: rgb(126, 190, 231);
+            font-family: 'Cinzel', serif;
+            font-size: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* image style */
+        .imgrs {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 330px;
+            width: 550px;
+            padding: 10px;
+        }
+
+        /* second image style */
+        .imgrstt {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            width: 550px;
+            padding: 10px;
+        }
+
+        /* hide for toggle */
+        .webhide {
+            display: none;
+        }
+
+        /* style for image below title */
+        .re-title {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* sub title style */
+        .titlers {
+            font-size: 25px;
+            font-family: 'Tenali Ramakrishna', sans-serif;
+            color: rgb(227, 143, 209)
+        }
+
+        /* padding for paragraphs */
+        .explain {
+            padding: 20px;
+        }
+
+        /* style for reference text */
+        .tiref {
+            font-family: 'Tenali Ramakrishna', sans-serif;
+            font-size: 20px;
+        }
+
+        /* style for hyperlinks */
+        .ref {
+            color: rgba(149, 157, 239, 1);
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* hover hyperlink style */
+        .ref:hover {
+            text-shadow: 0 0 10px rgb(110, 119, 247);
+        }
+
+        /* border line */
+        .oneline {
+            border-bottom: 1px solid rgba(202, 200, 200, 0.534);
+            height: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<!-- Body starts here -->
+<body class="bg">
+    <!-- Go Up Element -->
+    <div class="go-up" id="goup" onclick="goup()"> <i class="fa fa-angle-up" aria-hidden="true"></i></div>
+    <!-- Start of navigation bar -->
+    <!-- Hamburger menu for mobile devices -->
+    <div class="hamburger" id="hamburger" onclick="toggle()"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="research.html">Research</a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <!-- End of navigation bar -->
+
+    <!-- Start of Research -->
+    <div class="rs-wrapper">
+        <div class="rs-container">
+            <!-- Research Heading -->
+            <div>
+                <h1 class="research"> Research</h1> <img src="../Images/research.jpg" height="90px" class="re-title">
+            </div> <br>
+            <!-- Heading End -->
+
+            <!-- Comparing Websites -->
+            <div class="cv-title"> <span class="titlers"> CV and Research Border </span> </div> <br>
+            <div class="cv">
+                <!-- Screenshot of Ref1 -->
+                <div class="cv-left">
+                    <div> <img src="../Images/ref1.jpg" class="imgrs"> </div>
+                </div>
+                <!-- Screenshot of Web1 -->
+                <div class="cv-right">
+                    <div> <img src="../Images/web1.jpg" id="bod1" class="imgrs webhide"> <img src="../Images/web1.1.png"
+                            id="bod2" class="imgrs webhide"> </div>
+                    <!-- Button is used here -->
+                    <button onclick="borderimg()" class="toggle-btn">Toggle</button>
+                </div>
+            </div>
+            <!-- Explaining the use with link-->
+            <div class="oneline">
+                <p class="explain"> The above picture was an inspiration for the design on the cv and research. The
+                    picture was found by me coincidentally, when I was in search of an element which could possibly make
+                    my project stand out from the rest. It is quite intriguing and hence I applied the necessary syntax
+                    for the outer translucent border. A few alterations were made by my side because I did not like how
+                    much padding was given to the top and bottom. </p> <span class="tiref"> Reference: <a
+                        href="https://mangafunny.com/manga/psycho-revenge/" target="_blank" class="ref"> Mangafunny </a>
+                </span>
+            </div>
+            <!-- Where the ref is used -->
+            <div class="oneline"> <span class="titlers"> CV, Blog and Research Style </span> </div> <br>
+            <div class="cv">
+                <!-- Screenshot of Ref2 -->
+                <div class="cv-left">
+                    <div> <img src="../Images/ref2.png" class="imgrstt"> </div>
+                </div>
+                <!-- Screenshot of Web2 -->
+                <div class="cv-right">
+                    <div> <img src="../Images/web2.JPG" id="rss1" class="imgrstt webhide"> <img
+                            src="../Images/web2.2.png" id="rss2" class="imgrstt webhide"> </div>
+                    <!-- Use of button -->
+                    <button onclick="rsimg()" class="toggle-btn">Toggle</button>
+                </div>
+            </div>
+            <!-- Explaining the use with link-->
+            <div class="oneline">
+                <p class="explain"> Simplicity was my main motto in creating this project but in an aesthetically
+                    pleasing way. So, in order to tie it all together a few lines were added in, which in my opinion
+                    made the page appear more orderly and fulfilled in giving the vibe that I was going for. A lot of
+                    brainstorming from my side brought me to the picture above, it was both simple and yet it fit right
+                    in. A few necessary changes later you can see the output. </p> <span class="tiref"> Reference: <a
+                        href="https://www.resumeangels.com/product/template-cv-minimalist-siena/" target="_blank"
+                        class="ref"> Resumeangels </a> </span>
+            </div>
+            <!-- Where the ref is used -->
+            <div class="oneline"> <span class="titlers"> Blog Page </span> </div> <br>
+            <div class="cv">
+                <!-- Screenshot of Ref3 -->
+                <div class="cv-left">
+                    <div> <img src="../Images/ref3.jpg" height="248px" width="550px"> </div>
+                </div>
+                <!-- Screenshot of Web3 -->
+                <div class="cv-right">
+                    <div> <img src="../Images/web3.png" height="248px" width="550px"> </div>
+                </div>
+            </div>
+            <!-- Explaining the use with link-->
+            <div class="oneline">
+                <p class="explain"> It was my first experience in creating a blog which made me realize how little
+                    knowledge I had about designing it. In order to overcome this short coming, I looked through various
+                    sites and the one that resonated with me was the picture above. Similar to the referenced picture, I
+                    took the way that the heading was portrayed given that I changed the width of the background solid
+                    color to match my interest. I took various colors to make the visuals attractive. The picture layout
+                    is quite similar to my reference image. </p> <span class="tiref"> Reference: <a
+                        href="https://www.blogger.com/about/" target="_blank" class="ref"> Blogger </a> </span>
+            </div>
+            <!-- Where the ref is used -->
+            <div class="oneline"> <span class="titlers"> Scroll Back to Top Button </span> </div> <br>
+            <div class="cv">
+                <!-- Screenshot of Ref4 -->
+                <div class="cv-left">
+                    <div> <img src="../Images/ref4.jpg" height="550px" width="866px"> </div>
+                </div>
+                <!-- Screenshot of Web4 -->
+                <div class="cv-right">
+                    <div> <img src="../Images/web4.png" height="550px" width="866px"> </div>
+                </div>
+            </div>
+            <!-- Explaining the use with link-->
+            <div class="oneline">
+                <p class="explain"> As seen in the bottom right, the arrow leading upwards when you scroll down is a
+                    working button. It leads you back up on the top of page when you click it. This feature was brought
+                    to my attention through the site which is mentioned in the above image. Due to this inspiration, I
+                    got the chance to add this feature into my blog and research. </p> <span class="tiref"> Reference:
+                    <a href="https://flamescans.org/omniscient-readers-viewpoint-chapter-48/" target="_blank"
+                        class="ref"> Flamescans </a> </span>
+            </div>
+            <!-- Where the ref is used -->
+            <div class="oneline"> <span class="titlers"> Contact Page </span> </div> <br>
+            <div class="cv">
+                <!-- Screenshot of Ref5 -->
+                <div class="cv-left">
+                    <div> <img src="../Images/ref5.png" height="248px" width="550px"> </div>
+                </div>
+                <!-- Screenshot of Web5 -->
+                <div class="cv-right">
+                    <div> <img src="../Images/web5.png" height="248px" width="550px"> </div>
+                </div>
+            </div>
+            <!-- Explaining the use with link-->
+            <div class="oneline">
+                <p class="explain"> The last page of my project leads you to a contact form which is meant to be filled
+                    for those who want to give suggestions or to have a chat. This format is a direct inspiration from
+                    the above-mentioned picture. The hyperlinks present on the left side are all working links. The
+                    address link directs you to the google map, phone no. allows you to make a direct call, email leads
+                    you to Gmail pop-up box where you can see various email addresses from which you can choose one that
+                    you
+                    want to send an email from, the facebook and instagram link leads you to the creator social media
+                    sites. </p> <span class="tiref"> Reference: <a
+                        href="https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-02.jpg.webp"
+                        target="_blank" class="ref"> Colorlib </a> </span>
+            </div>
+            <!-- End of Comparison -->
+        </div>
+    </div>
+    <!-- End of Research -->
+
+    <!-- Including Global Script -->
+    <script src="../Js/contact.js"></script>
+    <!-- Including Internal Script -->
+    <script>
+        // Javascript used to change pictures by clicking a button 1
+        function borderimg() {
+            var b1 = document.getElementById("bod1");
+            var b2 = document.getElementById("bod2");
+            if (b1.style.display == "none") {
+                b1.style.display = "block";
+                b2.style.display = "none";
+            } else {
+                b1.style.display = "none";
+                b2.style.display = "block";
+            }
+        }
+        document.getElementById("bod1").style.display = "block";
+        // Javascript used to change pictures by clicking a button 2
+        function rsimg() {
+            var s1 = document.getElementById("rss1");
+            var s2 = document.getElementById("rss2");
+            if (s1.style.display == "none") {
+                s1.style.display = "block";
+                s2.style.display = "none";
+            } else {
+                s1.style.display = "none";
+                s2.style.display = "block";
+            }
+        }
+        document.getElementById("rss1").style.display = "block";
+    </script>
+</body>
+<!-- Body Ends Here -->
+
+</html>

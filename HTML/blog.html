@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coursework Blog">
+    <meta name="author" content="Rabina Shrestha">
+    <!-- Importing Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
+    <!-- Importing Font Awesome Icons for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <!-- Adding Internal Styles -->
+    <style>
+        /* Specific background for blog */
+        .techbg {
+            background: url("../Images/tech.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Background color for the topic */
+        .btopic {
+            background-color: rgba(185, 248, 253, 1);
+            text-align: center;
+        }
+
+        /* Sets pictures to the center */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Underline */
+        .cv-2title {
+            border-bottom: 1px solid rgba(202, 200, 200, 0.534);
+            height: auto;
+            text-align: center;
+        }
+
+        /* Used for toggle hide */
+        .hide {
+            display: none;
+        }
+
+        /* Sub headings style */
+        .fontbl {
+            font-size: 25px;
+            font-family: 'Tenali Ramakrishna', sans-serif;
+            color: rgb(30, 154, 163)
+        }
+    </style>
+</head>
+
+<!-- Body starts here -->
+<body>
+    <!-- Div for the background image -->
+    <div class="techbg">
+        <!-- Go Up Element -->
+        <div class="go-up" id="goup" onclick="goup()"> <i class="fa fa-angle-up" aria-hidden="true"></i></div>
+        <!-- Start of navigation bar -->
+        <!-- Hamburger menu for mobile devices -->
+        <div class="hamburger" id="hamburger" onclick="toggle()"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+        <!-- Use of inline CSS -->
+        <nav class="nav" id="nav" style="background-color: rgba(0,0,0,.3);">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+
+        <!-- Start of Blog -->
+        <div class="cv-container">
+            <!-- Adding Time Element -->
+            <div id="time-container"> <span id="datetime"
+                    style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 17px;"></span> </div>
+            <!-- Heading of the Blog -->
+            <div class="btopic"> <br>
+                <!-- Use of inline CSS -->
+                <h1 style="font-family: 'Tenali Ramakrishna', sans-serif; font-size: 40px;"> <span
+                        style="color:rgba(149, 157, 239, 1);"> Influence of Modern</span> <span
+                        style="color: rgba(241, 172, 244, 1);"> Technology</span> </h1> <br>
+            </div> <br>
+            <!-- Div for writing blog -->
+            <div>
+                <p style="text-align: center;"> The curious yet greedy nature of mankind has led us to be fascinated
+                    with every little detail from the days of wheels to the present where we are close enough to flying
+                    cars. It wouldn’t be a sin to admit that the technology and our planet has begun to co-relate, even
+                    extending beyond it to some extent. Technology has successfully surpassed its threshold right from
+                    medical advancements to entertainment. All has been catered by it. </p>
+            </div> <br>
+            <!-- Sub-Topics of the Blog -->
+            <div>
+                <!-- Use of inline CSS for topic-->
+                <div class="cv-title"> <span class="fontbl"> Education Sector </span> </div> <br> <img
+                    src="../Images/lap.jpg" id="pic1" alt="online" width="550" height="320" class="center hide"> <img
+                    src="../Images/c1.jpg" id="pic2" alt="classroom" width="550" height="320" class="center hide"> <br>
+
+                <!-- Button is used here -->
+                <button onclick="twoimgs()" class="toggle-btn">Toggle</button>
+                <!-- CV effect is used here -->
+                <div class="cv">
+                    <!-- Explaining topic 1 -->
+                    <div class="cv-left">
+                        <p> The walls of a classroom which was a barrier for many in the past is no longer considered
+                            one, as massive amount of information is now available at one's fingertips.The technological
+                            advancement has enabled opportunities of formal learning for students by the availability of
+                            books without actually having to buying them, they can be tutored on hard topics using
+                            platforms like YouTube, w3schools, Khan Academy, Podcasts and Brainly. </p>
+                    </div>
+                    <div class="cv-right">
+                        <p> A disaster could’ve occurred if we hadn’t found a way for GenZ and Gen Alpha to lift their
+                            pens. It is all in the grace of the advance in technology that we have access to online
+                            learning platforms, where both the learner and the teacher come together in a virtual
+                            conference with the intentions of sharing and gaining knowledge. </p>
+                    </div>
+                </div>
+                <!-- Drawback of topic 1 -->
+                <div class="cv-2title" style="border-top: 0px ;"> <br>
+                    <p> Drawbacks of Online Classes<br> <br> ◇ Social interaction is limited and hence students may feel
+                        a drift in their social personas. <br> ◇ Staring at the screen for extended hours harms our
+                        occipital lobe. <br> ◇ Keeping the social differences in mind, not all families can afford the
+                        expenses that comes with the physical requirements of online classes. </p> <br>
+                </div>
+                <!-- Use of div for topic-->
+                <div class="cv-2title"> <span class="fontbl"> Medical Field </span> </div> <br> <img
+                    src="../Images/med.jpg" alt="med" width="550" height="320" class="center"> <br>
+                <div>
+                    <p style="text-align: center;"> The medical field has been under the impact of the continuous
+                        technological advancements and thus has saved countless lives. These technological advancements
+                        include: </p>
+                </div> <br>
+                <div class="cv">
+                    <!-- Explaining topic 2 -->
+                    <div class="cv-left">
+                        <p> Use of Electronic Health Record. <br> The outdated ways of storing and writing records is
+                            highly inefficient. With the advancement in IT fields, this problem has been sorted. <br>
+                            Now, the data is easy to access, can be tracked easily and can facilitate limitless advances
+                            in diagnostics and treatment. Patient’s record is now transferred faster which allows
+                            combined efficient care. </p>
+                    </div>
+                    <div class="cv-right">
+                        <p> Medical Devices. <br> The diagnosing process has been made much more efficient thanks to
+                            medical technological advancement. Patients are able to monitor their health at home which
+                            saves money and reduces unnecessary visits. The pandemic has introduced us to devices that
+                            were not in much use like the present. Some examples of it are Portable Pulse Oximeter,
+                            Temporal Artery Thermometer,Oxygen Tank etc. </p>
+                    </div>
+                </div>
+                <!-- Drawbacks of topic2 -->
+                <div class="cv-title" style="border-top: 0px ;"> <br>
+                    <p> Drawbacks<br> <br> ◇ Risk of Medical records getting hacked. <br> ◇ Dangers from radiation
+                        therapy and CT. <br> ◇ Laser surgeries can damage cells in the body or other internal
+                        organs.<br> ◇ Online treatment may lead to misdiagnosis. </p> <br>
+                </div>
+                <!-- use of div for topic 3 -->
+                <div class="cv-2title"> <span class="fontbl"> Entertainment Industry </span> </div> <br> <img
+                    src="../Images/bts.jpg" alt="entertainment" width="363px" height="486px" class="center"> <br>
+                <div class="cv">
+                    <!-- Explaining topic 3 -->
+                    <div class="cv-left">
+                        <p> The repeated chaos in our everyday life makes it awfully monotonous. Thus, we search for an
+                            escape which is provided to us through the means of entertainment. It helps us loosen our
+                            grip from the constant workload and stress that we carry along from our birth. Technology
+                            has uplifted the entertainment industry to great levels The CGI effects has made movies more
+                            exciting. People have started to abandon the conventional TVs and have switched to streaming
+                            from sites. </p>
+                    </div>
+                    <div class="cv-right">
+                        <p> We are also able to advertise our personal interests by publishing stories, pictures or even
+                            start our own YouTube channel. <br> In today’s world, the entertainment industry also plays
+                            a major role in boosting up a country’s economy. For instance, the South Korean boy band
+                            “BTS’ generated an estimated $ 3.54 billion USD per year in addition to an annual $3.67
+                            billion USD in 2018 and has predicted to reach 49.8 billion USD in 10 years. </p>
+                    </div>
+                </div>
+                <!-- Drawbacks of topic 3 -->
+                <div class="cv-title" style="border-top: 0px ;"> <br>
+                    <p> Drawbacks<br> <br> ◇ Excessive usage may cause addiction. <br> ◇ It can also lead to obsessive
+                        behavior towards the artist, which may lead to hacking or trying to find out personal
+                        information
+                        about the artist. <br> ◇ It may cause people to be disinterested and lose motivation in their
+                        professions. </p> <br>
+                </div> <br>
+                <!-- Sub-topics Ends Here -->
+                <!-- Conclusion -->
+                <div class="cv-2title center"> <span style="color: rgb(166,170,243);font-size: 20px;"> ❀ ❀ ❀ </span>
+                    <br> <br>
+                    <p> To sum it up, technology plays a significant role in almost every sector. Right from business to
+                        financial services, its contribution is remarkable. But with the undeniable advantages comes
+                        disadvantages that are difficult to be avoided. The overuses may have irreversible impacts on
+                        everyone and must be controlled. </p> <br>
+                    <p> Especially during these times where the world is concerned and centered around this pandemic,
+                        working from home is the bare minimum for the stability of the world economy. In the end, it
+                        depends upon the Potter on how the clay is molded, if used in a positive way it will guide us
+                        towards the flying cars, if not we'll be heading back to volcanic times. </p> <br>
+                </div>
+                <!-- Conclusion end -->
+            </div>
+            <!-- Sub topics end -->
+        </div>
+        <!-- Blog Ends Here -->
+    </div>
+
+    <!-- Including Global Script -->
+    <script src="../Js/contact.js"></script>
+    <!-- Including Internal Script -->
+    <script>
+        function twoimgs() {
+            var p1 = document.getElementById("pic1");
+            var p2 = document.getElementById("pic2");
+            if (p1.style.display == "none") {
+                p1.style.display = "block";
+                p2.style.display = "none";
+            } else {
+                p1.style.display = "none";
+                p2.style.display = "block";
+            }
+        }
+        document.getElementById("pic1").style.display = "block";
+    </script>
+</body>
+<!-- Body Ends Here -->
+
+</html>
